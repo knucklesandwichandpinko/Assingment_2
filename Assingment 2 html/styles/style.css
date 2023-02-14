@@ -1,0 +1,263 @@
+* ,*:before, *:after {
+    box-sizing:border-box;
+    padding: 0em;
+    margin: 0em;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Default formatting */
+
+h1,
+h2, 
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 1em;
+}
+
+h1{
+    font-size: 3.4em;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 2.1em;
+    text-align: center;
+    align-items: center;}
+
+h3 {
+    font-size: 1.8em;
+    text-align: center;
+    
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+    
+}
+
+/* layout */
+body {
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: 
+    "header header header "
+    "aside main main"
+    "footer footer footer";
+    gap: 1em;
+    justify-content:center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display:flex;
+    justify-content: flex-start;
+    text-align: left;
+    width: 90px;;
+    height: 90px;
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 0.5em;
+    margin: 1em 4em 0.5em;
+ }
+
+ .button{
+    align-items: center;
+    margin-top: 5px;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+
+ }
+ 
+ 
+ 
+
+  .MainTitle {
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+ }
+ 
+ 
+ .Image1 {
+    width: 200px;
+    height: 200px;
+ }
+ 
+ .Image2 {
+    width: 200px;
+    height: 200px;
+ }
+ .h2{
+    display: inline-block;
+    flex: 1;
+    justify-content: space-around;
+   
+    
+ }
+
+ .mainimage{
+    float: left;
+    padding: 0.5em;
+    margin-top:5em;
+    height: 120px;
+    width:120px;
+   
+ }
+ 
+
+header {
+    grid-area: header;
+
+}
+main {
+    grid-area: main;
+    padding:2em;
+    margin: 4em;
+    background-color: #566;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+ aside{
+    grid-area: aside;
+    margin-top:0;
+    
+ }
+
+
+footer {
+    grid-area: footer;
+    background-color: #566;
+    padding: 2em;
+    text-align: center;
+    margin: 4em;
+    margin-top: 1em;
+
+}
+
+/* Navigation */
+
+#main-nav {
+    width: 100%;
+    background-color: #566;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0em;
+
+}
+
+
+
+
+
+
+#main-nav > ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+  
+  
+#main-nav > ul >  li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.25s;
+}
+
+#main-nav > ul > li > a:hover {
+    background-color: #566;
+}
+
+
+
+/* Header */
+header > h1 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 2em;
+}
+
+footer > p {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Aside Styles */
+
+
+  aside {
+    padding: 1em;
+    margin-top: 0em;
+    background-color: bisque;
+    margin: 0em;
+    margin-bottom:0em;
+    margin-left: 4em;
+
+    
+  }
+
+  aside h3{
+
+    padding:0.5em;
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    
+      }
+    
+
+    
+ aside ul {
+    list-style-type:none;
+    margin-top: 0em;
+    padding: 0;
+    text-align: center;
+    gap: 1.5em;
+    display: grid;
+    
+
+ }
+
+ aside li {
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+ 
+
